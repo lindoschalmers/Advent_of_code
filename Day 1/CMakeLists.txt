@@ -3,4 +3,5 @@ project(AOC1/Day1)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(AOC1 "main.cpp")
+add_executable(AOC1 "main.cpp"
+)

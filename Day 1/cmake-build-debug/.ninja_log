@@ -1,12 +1,13 @@
 # ninja log v6
-1	61	1764626056359009879	CMakeFiles/AOC1.dir/main.cpp.o.ddi	ed6b0138ff3dea2d
-61	63	1764626056419003902	CMakeFiles/AOC1.dir/CXX.dd	177f4139ac8c4ad1
-356	397	1764626056714974417	AOC1	cb3b2639ac69fd08
-61	63	1764626056419003902	CMakeFiles/AOC1.dir/main.cpp.o.modmap	177f4139ac8c4ad1
-63	356	1764626056423003503	CMakeFiles/AOC1.dir/main.cpp.o	2b97965c3c64d11b
 1	102	1764626562975599764	CMakeFiles/AOC1.dir/main.cpp.o.ddi	c664a6422a782c26
-102	105	1764626563079596140	CMakeFiles/AOC1.dir/CXX.dd	177f4139ac8c4ad1
-102	105	1764626563079596140	/home/alpine/CLionProjects/AOC1/Day 1/cmake-build-debug/CMakeFiles/AOC1.dir/CXXModules.json	177f4139ac8c4ad1
-102	105	1764626563079596140	CMakeFiles/AOC1.dir/main.cpp.o.modmap	177f4139ac8c4ad1
+66	350	1764626870343802281	CMakeFiles/AOC1.dir/home/alpine/CLionProjects/AOC1/Day2/main.cpp.o	9df17833223a7878
+1	5	1764627392766709504	CMakeFiles/AOC1.dir/CXX.dd	177f4139ac8c4ad1
+5	51	1764627392770709487	AOC1	cb3b2639ac69fd08
+1	5	1764627392766709504	CMakeFiles/AOC1.dir/main.cpp.o.modmap	177f4139ac8c4ad1
 105	609	1764626563079596140	CMakeFiles/AOC1.dir/main.cpp.o	27a6bb89b3f2a28e
-609	677	1764626563583578584	AOC1	cb3b2639ac69fd08
+1	5	1764627392766709504	/home/alpine/CLionProjects/AOC1/Day 1/cmake-build-debug/CMakeFiles/AOC1.dir/CXXModules.json	177f4139ac8c4ad1
+1	62	1764626870275803476	CMakeFiles/AOC1.dir/home/alpine/CLionProjects/AOC1/Day2/main.cpp.o.ddi	e37c99f074a6e1d5
+63	66	1764626870339802351	CMakeFiles/AOC1.dir/home/alpine/CLionProjects/AOC1/Day2/main.cpp.o.modmap	10b0f3ed94a38afe
+1	4	1764627456774472393	CMakeFiles/AOC1.dir/CXX.dd	177f4139ac8c4ad1
+1	4	1764627456774472393	/home/alpine/CLionProjects/AOC1/Day 1/cmake-build-debug/CMakeFiles/AOC1.dir/CXXModules.json	177f4139ac8c4ad1
+1	4	1764627456774472393	CMakeFiles/AOC1.dir/main.cpp.o.modmap	177f4139ac8c4ad1
