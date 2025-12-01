@@ -1,0 +1,3 @@
+/home/alpine/CLionProjects/AOC1/Day 1/cmake-build-debug/CMakeFiles/AOC1.dir
+/home/alpine/CLionProjects/AOC1/Day 1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/alpine/CLionProjects/AOC1/Day 1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

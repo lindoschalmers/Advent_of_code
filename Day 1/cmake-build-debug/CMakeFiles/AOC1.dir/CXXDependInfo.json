@@ -1,0 +1,27 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"database-info" : null,
+	"dir-cur-bld" : "/home/alpine/CLionProjects/AOC1/Day 1/cmake-build-debug",
+	"dir-cur-src" : "/home/alpine/CLionProjects/AOC1/Day 1",
+	"dir-top-bld" : "/home/alpine/CLionProjects/AOC1/Day 1/cmake-build-debug",
+	"dir-top-src" : "/home/alpine/CLionProjects/AOC1/Day 1",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "/home/alpine/CLionProjects/AOC1/Day 1/cmake-build-debug/CMakeFiles/AOC1.dir",
+	"sources" : 
+	{
+		"CMakeFiles/AOC1.dir/main.cpp.o" : 
+		{
+			"language" : "CXX",
+			"source" : "/home/alpine/CLionProjects/AOC1/Day 1/main.cpp"
+		}
+	}
+}
