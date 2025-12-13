@@ -4,11 +4,11 @@
 
 long long int globalSum = 0;
 
-void add_sum (long int num) {
+void add_sum (long long int num) {
     globalSum += num;
 }
 
-long int find_length(long int length) {
+long long int find_length(long long int length) {
     int i = 0;
     while (length > 0) {
         length = length/10;
@@ -18,22 +18,22 @@ long int find_length(long int length) {
     return length;
 }
 
-int check_range(long int min, long int max) {
+int check_range(long long int min, long long int max) {
     printf("Checking range: %ld - %ld\n", min, max);
-    long int length = 0;
-    for (long int i = min; i <= max; i++) {
+    long long int length = 0;
+    for (long long int i = min; i <= max; i++) {
        // printf("%d\n", i);
         length = find_length(i);
         //printf("Length: %ld\n", length);
-        long int temp = i;
-        long int arr[length];
+        long long int temp = i;
+        long long int arr[length];
         if (length % 2 == 0) {
             for (int j = 0; j < length; j++) {
                 arr[length-1-j] = temp % 10;
                 temp = temp/10;
             }
-           long int sum1 = 0, sum2 = 0;
-            for (int j = 0; j < length; j++) {
+           long long int sum1 = 0, sum2 = 0;
+            for (long long int j = 0; j < length; j++) {
                 if (j >= length/2) {
                     sum2 = sum2*10 + arr[j];
                 }
@@ -57,7 +57,7 @@ int main(){
             return 1;
         }
     char ch;
-    long int num1 = 0, num2 = 0, x, i = 0;
+    long long int num1 = 0, num2 = 0, x, i = 0;
     while (file.get(ch)) {
         if (ch == '-') {
             while (file.get(ch)) {
