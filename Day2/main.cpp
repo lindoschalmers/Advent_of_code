@@ -2,6 +2,8 @@
 #include <string>
 #include <fstream>
 
+//PART 2, ALSO COUNT ID's LIKE 111, 123123123
+
 long long int globalSum = 0;
 
 void add_sum (long long int num) {
@@ -18,36 +20,44 @@ long long int find_length(long long int length) {
     return length;
 }
 
-int check_range(long long int min, long long int max) {
-    printf("Checking range: %ld - %ld\n", min, max);
-    long long int length = 0;
-    for (long long int i = min; i <= max; i++) {
-       // printf("%d\n", i);
-        length = find_length(i);
-        //printf("Length: %ld\n", length);
-        long long int temp = i;
-        long long int arr[length];
-        if (length % 2 == 0) {
-            for (int j = 0; j < length; j++) {
-                arr[length-1-j] = temp % 10;
-                temp = temp/10;
-            }
-           long long int sum1 = 0, sum2 = 0;
-            for (long long int j = 0; j < length; j++) {
-                if (j >= length/2) {
-                    sum2 = sum2*10 + arr[j];
-                }
-                else {
-                    sum1 = sum1*10 + arr[j];
+int has_repeating_pattern(long long int length, long long int *arr) {
+    for (int patternLen = 1; patternLen < length; patternLen++) {
+        if (length % patternLen == 0) {
+            int isRepeating = 1;
+
+            //Check if pattern repeats
+            for (int i = patternLen; i < length; i++) {
+                if (arr[i] != arr[i % patternLen]) {
+                    isRepeating = 0;
+                    break;
                 }
             }
-            if (sum1 == sum2) {
-               // printf("sum1: %d, sum2: %d, i: %d\n", sum1, sum2, i);
-                add_sum(i);
+            if (isRepeating) {
+                return 1;
             }
         }
     }
     return 0;
+}
+
+void check_range(long long int min, long long int max) {
+    printf("Checking range: %lld - %lld\n", min, max);
+    long long int length = 0;
+    for (long long int i = min; i <= max; i++) {
+        // printf("%d\n", i);
+        length = find_length(i);
+        //printf("Length: %ld\n", length);
+        long long int temp = i;
+        long long int arr[length];
+
+        for (int j = 0; j < length; j++) {
+            arr[length-1-j] = temp % 10;
+            temp = temp/10;
+        }
+        if (has_repeating_pattern(length, arr)) {
+            add_sum(i);
+        }
+    }
 }
 
 int main(){
